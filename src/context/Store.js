@@ -5,7 +5,7 @@ const initialState = {
   userInfo: localStorage.getItem('userInfo')
     ? JSON.parse(localStorage.getItem('userInfo'))
     : null,
-  baseUrl: 'http://localhost:5000/api',
+  baseUrl: 'https://authsystemapi.onrender.com/api',
 };
 function storeReducer(state, action) {
   switch (action.type) {
